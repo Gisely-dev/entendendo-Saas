@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bastidores | SaaS pra estudar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800\&family=Caveat:wght@600;700\&family=DM+Sans:wght@500;700\&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="bastidores">
+<main class="container">
+  <section class="hero">
+    <span class="selo">nos bastidores</span>
+    <h1>Onde o software <span class="destaque">mora</span>?</h1>
+    <p>Quando você clica em um botão, um pedido viaja até a nuvem e volta. Dispare um pedido e acompanhe o caminho.</p>
+  </section>
+
+  <section>
+    <div class="controles">
+      <button class="btn" id="btn-enviar">Enviar pedido</button>
+      <label><input type="checkbox" id="chk-logado" checked> Estou logado</label>
+      <label>Velocidade <input type="range" id="velocidade" min="1" max="5" value="3"></label>
+    </div>
+    <div class="cartao">
+      <div class="fluxo">
+        <div class="no" id="no-voce"><span class="emoji">🧑🏽‍💻</span><strong>Você</strong><br><small>app / navegador</small></div>
+        <span class="seta" id="seta-1">→</span>
+        <div class="no" id="no-servidor"><span class="emoji">☁️</span><strong>Servidor</strong><br><small>código na nuvem</small></div>
+        <span class="seta" id="seta-2">→</span>
+        <div class="no" id="no-banco"><span class="emoji">🗄️</span><strong>Banco de dados</strong><br><small>informações salvas</small></div>
+      </div>
+    </div>
+    <h3 style="margin-top:24px">Diário do pedido</h3>
+    <div id="log"><div class="t-info">Clique em "Enviar pedido" para começar.</div></div>
+  </section>
+
+  <section>
+    <h2>As 6 peças de um SaaS</h2>
+    <p>Clique em cada peça para abrir os detalhes. <span class="nota">(sim, dá pra fazer o back-end em Java!)</span></p>
+    <div class="pecas" id="pecas"></div>
+  </section>
+</main>
+<script src="js/comum.js"></script>
+<script src="js/bastidores.js"></script>
+</body>
+</html>
